@@ -23,7 +23,7 @@ public class GradeCalculator {
         double waegf = Math.round((waeg * 100.0)/ 100.0 );
 
 
-
+        double totalgrade = Math.round(wsg + waqg + waeg);
         System.out.println("CSE Grade for:   " + name);
         System.out.println("Number of studios attended:   "  + studiosAttended);
         System.out.println(" Weighted studio grade (out of 15):   " + wsgf + "%"); 
@@ -31,7 +31,7 @@ public class GradeCalculator {
         System.out.println( " Weighted average quiz grade (out of 25):   " + waqgf + "%");
         System.out.println("Average exam grade:   "  + averageQuizGrade);
         System.out.println( " Weighted average exam grade (out of 60):   " + waegf + "%");
-        System.out.println("Final Grade:   " + (wsgf + waqgf + waegf) + "%");
+        System.out.println("Final Grade:   " + totalgrade + "%");
 
 
 
